@@ -44,6 +44,9 @@ circles.push(circle);
 
 
         // TODO 7 : Use a loop to create multiple circles
+        for ( var i=0; i<100; i++) {
+                  drawCircle();
+                          }
 
 
 
@@ -51,7 +54,7 @@ circles.push(circle);
         ///////////////////
         // PROGRAM LOGIC //
         ///////////////////
-        
+    
         /* 
         This Function is called 60 times/second, producing 60 frames/second.
         In each frame, for every circle, it should redraw that circle
@@ -74,6 +77,12 @@ circles.push(circle);
 
             
             // TODO 8 / TODO 9 : Iterate over the array
+            for (var i=0; i<circles.length; i++) {
+                physiks.updatePosition(cirles[i]);
+                game.checkCirclePosition(circles[i]);
+
+
+                         }
            
             
         }
